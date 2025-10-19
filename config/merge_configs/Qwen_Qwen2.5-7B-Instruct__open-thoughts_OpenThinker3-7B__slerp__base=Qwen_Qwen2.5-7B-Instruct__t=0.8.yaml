@@ -1,0 +1,8 @@
+merge_method: slerp
+base_model: Qwen/Qwen2.5-7B-Instruct
+models:
+- model: Qwen/Qwen2.5-7B-Instruct
+- model: open-thoughts/OpenThinker3-7B
+parameters:
+  t: 0.8
+dtype: bfloat16

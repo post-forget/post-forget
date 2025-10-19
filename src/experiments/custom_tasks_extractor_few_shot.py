@@ -25,10 +25,10 @@ import random
 
 metric_name = 'letter'
 
-# Specify full path to json due due to above note
+# TODO: Specify full path to json due due to above note
 json_file_path = ''
 if json_file_path == '':
-    raise ValueError('Please specify the full path to the "cot_template.json" file in the json_file_path variable in src/experiments/custom_tasks_extractor_few_shot.py")
+    raise ValueError('Please specify the full path to the "cot_template.json" file in the json_file_path variable in src/experiments/custom_tasks_extractor_few_shot.py')
 
 USE_COT = True
 
@@ -1151,6 +1151,7 @@ def mmlu_with_cot(line: dict, task_name: str, few_shot_template: str, topic: str
         question=question,
         choices=choices,
         cot_template=few_shot_template
+        use_cot=False
     )
 
     gold_ix = line["answer"] if isinstance(line["answer"], int) else LETTER_INDICES.index(line["answer"])

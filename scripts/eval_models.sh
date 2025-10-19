@@ -15,7 +15,7 @@ DATA_PARALLEL=1
 set -euo pipefail
 
 if [ $# -lt 1 ]; then
-    echo "Usage: $0 <qwen_math_base|qwen_math_instruct|base|tuned>"
+    echo "Usage: $0 <qwen_math_base|qwen_math_instruct|base|tuned|merge_base|merge_tuned>"
     exit 1
 fi
 
@@ -27,7 +27,7 @@ if [ "$MODE" = "qwen_math_base" ]; then
 	Qwen/Qwen2.5-Math-7B
     )
     COMMON_ARGS=( --custom_tasks_directory "${LIGHTEVAL_TASKS_FEW_SHOT}" \
-					   --num_seeds 3 \
+					   --num_seeds 1 \
 					   --max_new_tokens 4096 \
 					   --max_model_length 4096 \
 					   --temperature 0.6 \
@@ -118,12 +118,47 @@ elif [ "$MODE" = "tuned" ]; then
 					   --data_parallel_size "${DATA_PARALLEL}" \
 					   --venv_dir "${VENV_DIR}" \
 					   --code_dir "${CODE_DIR}" )
-# elif [ "$MODE" = "merge_models" ]; then
-#     for model_path in $(ls -d merge_models/*/); do
-#         if [[ -d "$model_path" ]]; then
-# 	    MODELS+=("$(realpath "$model_path")")
-#         fi
-#     done
+elif [ "$MODE" = "merge_base" ]; then
+    for model_path in $(ls -d merge_models/*/); do
+        if [[ -d "$model_path" ]]; then
+            model_name=$(basename "$model_path")
+            
+            if [[ "$model_name" != *"OpenThinker"* ]]; then
+                MODELS+=("$(realpath "$model_path")")
+            fi
+        fi
+    done
+    COMMON_ARGS=( --custom_tasks_directory "${LIGHTEVAL_TASKS_FEW_SHOT}" \
+                   --num_seeds 3 \
+                   --max_new_tokens 32768 \
+                   --max_model_length 32768 \
+                   --temperature 0.6 \
+                   --top_p 0.95 \
+                   --tensor_parallel_size "${TENSOR_PARALLEL}" \
+                   --data_parallel_size "${DATA_PARALLEL}" \
+                   --venv_dir "${VENV_DIR}" \
+                   --code_dir "${CODE_DIR}" )
+elif [ "$MODE" = "merged_tuned" ]; then
+    for model_path in $(ls -d merge_models/*/); do
+        if [[ -d "$model_path" ]]; then
+            model_name=$(basename "$model_path")
+            
+            if [[ "$model_name" == *"OpenThinker"* ]]; then
+                MODELS+=("$(realpath "$model_path")")
+            fi
+        fi
+    done
+    COMMON_ARGS=( --custom_tasks_directory "${LIGHTEVAL_TASKS_PROMPT}" \
+                   --num_seeds 3 \
+                   --max_new_tokens 32768 \
+                   --max_model_length 32768 \
+                   --temperature 0.6 \
+                   --top_p 0.95 \
+                   --use_chat_template \
+                   --tensor_parallel_size "${TENSOR_PARALLEL}" \
+                   --data_parallel_size "${DATA_PARALLEL}" \
+                   --venv_dir "${VENV_DIR}" \
+                   --code_dir "${CODE_DIR}" )
 else
     echo "Error: Please enter a valid mode"
     exit 1

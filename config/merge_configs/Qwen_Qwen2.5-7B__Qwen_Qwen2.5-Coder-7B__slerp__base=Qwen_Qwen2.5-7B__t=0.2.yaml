@@ -1,0 +1,8 @@
+merge_method: slerp
+base_model: Qwen/Qwen2.5-7B
+models:
+- model: Qwen/Qwen2.5-7B
+- model: Qwen/Qwen2.5-Coder-7B
+parameters:
+  t: 0.2
+dtype: bfloat16
