@@ -1,0 +1,10 @@
+community|mmlu_reasoning_letter:electrical_engineering|0|0
+community|mmlu_reasoning_letter:elementary_mathematics|0|0
+community|mmlu_reasoning_letter:high_school_biology|0|0
+community|mmlu_reasoning_letter:high_school_chemistry|0|0
+community|mmlu_reasoning_letter:high_school_computer_science|0|0
+community|mmlu_reasoning_letter:high_school_european_history|0|0
+community|mmlu_reasoning_letter:high_school_geography|0|0
+community|mmlu_reasoning_letter:high_school_government_and_politics|0|0
+community|mmlu_reasoning_letter:high_school_macroeconomics|0|0
+community|mmlu_reasoning_letter:high_school_mathematics|0|0

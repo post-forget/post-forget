@@ -1,0 +1,10 @@
+community|bbh_reasoning_letter:hyperbaton|0|0
+community|bbh_reasoning_letter:logical_deduction_five_objects|0|0
+community|bbh_reasoning_letter:logical_deduction_seven_objects|0|0
+community|bbh_reasoning_letter:logical_deduction_three_objects|0|0
+community|bbh_reasoning_letter:movie_recommendation|0|0
+community|bbh_reasoning_letter:multistep_arithmetic_two|0|0
+community|bbh_reasoning_letter:navigate|0|0
+community|bbh_reasoning_letter:object_counting|0|0
+community|bbh_reasoning_letter:penguins_in_a_table|0|0
+community|bbh_reasoning_letter:reasoning_about_colored_objects|0|0

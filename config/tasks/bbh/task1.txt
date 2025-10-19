@@ -1,0 +1,7 @@
+community|bbh_reasoning_letter:boolean_expressions|0|0
+community|bbh_reasoning_letter:causal_judgment|0|0
+community|bbh_reasoning_letter:date_understanding|0|0
+community|bbh_reasoning_letter:disambiguation_qa|0|0
+community|bbh_reasoning_letter:dyck_languages|0|0
+community|bbh_reasoning_letter:formal_fallacies|0|0
+community|bbh_reasoning_letter:geometric_shapes|0|0

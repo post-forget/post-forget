@@ -1,0 +1,2 @@
+community|truthfulqa_reasoning_letter:mc1|0|0
+# community|truthfulqa_reasoning_letter:mc2|0|0

@@ -1,0 +1,9 @@
+community|mmlu_reasoning_letter:machine_learning|0|0
+community|mmlu_reasoning_letter:management|0|0
+community|mmlu_reasoning_letter:marketing|0|0
+community|mmlu_reasoning_letter:medical_genetics|0|0
+community|mmlu_reasoning_letter:miscellaneous|0|0
+community|mmlu_reasoning_letter:moral_disputes|0|0
+community|mmlu_reasoning_letter:moral_scenarios|0|0
+community|mmlu_reasoning_letter:nutrition|0|0
+community|mmlu_reasoning_letter:philosophy|0|0

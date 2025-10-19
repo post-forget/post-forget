@@ -1,0 +1,11 @@
+community|mmlu_reasoning_letter:prehistory|0|0
+community|mmlu_reasoning_letter:professional_accounting|0|0
+community|mmlu_reasoning_letter:professional_law|0|0
+community|mmlu_reasoning_letter:professional_medicine|0|0
+community|mmlu_reasoning_letter:professional_psychology|0|0
+community|mmlu_reasoning_letter:public_relations|0|0
+community|mmlu_reasoning_letter:security_studies|0|0
+community|mmlu_reasoning_letter:sociology|0|0
+community|mmlu_reasoning_letter:us_foreign_policy|0|0
+community|mmlu_reasoning_letter:virology|0|0
+community|mmlu_reasoning_letter:world_religions|0|0

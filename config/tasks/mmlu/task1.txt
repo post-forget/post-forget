@@ -1,0 +1,6 @@
+community|mmlu_reasoning_letter:abstract_algebra|0|0
+community|mmlu_reasoning_letter:business_ethics|0|0
+community|mmlu_reasoning_letter:college_computer_science|0|0
+community|mmlu_reasoning_letter:formal_logic|0|0
+community|mmlu_reasoning_letter:global_facts|0|0
+community|mmlu_reasoning_letter:anatomy|0|0

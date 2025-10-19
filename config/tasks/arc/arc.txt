@@ -1,0 +1,2 @@
+community|arc_reasoning_custom_prompt_letter:easy|0|0 
+community|arc_reasoning_custom_prompt_letter:challenge|0|0

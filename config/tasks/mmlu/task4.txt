@@ -1,0 +1,10 @@
+community|mmlu_reasoning_letter:astronomy|0|0
+community|mmlu_reasoning_letter:clinical_knowledge|0|0
+community|mmlu_reasoning_letter:college_biology|0|0
+community|mmlu_reasoning_letter:college_chemistry|0|0
+community|mmlu_reasoning_letter:college_mathematics|0|0
+community|mmlu_reasoning_letter:college_medicine|0|0
+community|mmlu_reasoning_letter:college_physics|0|0
+community|mmlu_reasoning_letter:computer_security|0|0
+community|mmlu_reasoning_letter:conceptual_physics|0|0
+community|mmlu_reasoning_letter:econometrics|0|0

@@ -1,0 +1,10 @@
+community|bbh_reasoning_letter:ruin_names|0|0
+community|bbh_reasoning_letter:salient_translation_error_detection|0|0
+community|bbh_reasoning_letter:snarks|0|0
+community|bbh_reasoning_letter:sports_understanding|0|0
+community|bbh_reasoning_letter:temporal_sequences|0|0
+community|bbh_reasoning_letter:tracking_shuffled_objects_five_objects|0|0
+community|bbh_reasoning_letter:tracking_shuffled_objects_seven_objects|0|0
+community|bbh_reasoning_letter:tracking_shuffled_objects_three_objects|0|0
+community|bbh_reasoning_letter:web_of_lies|0|0
+community|bbh_reasoning_letter:word_sorting|0|0
