@@ -307,7 +307,7 @@ def compare_models(details_dirs, results_dirs, before_model, after_model, output
 
 
 if __name__ == "__main__":
-   os.makedirs('comparison_results', exist_ok=True)
+   os.makedirs('results/comparison_results_per_model', exist_ok=True)
 
    before_models = [
        "Qwen_Qwen2.5-32B-Instruct",
@@ -439,7 +439,7 @@ if __name__ == "__main__":
        # Create sanitized filenames (replace / with _)
        before_safe = before_model.replace('/', '_')
        after_safe = after_model.replace('/', '_')
-       output_file = f"comparison_results/{before_safe}_vs_{after_safe}.csv"
+       output_file = f"results/comparison_results_per_model/{before_safe}_vs_{after_safe}.csv"
 
        print("=" * 43)
        print(f"Comparing: {before_model} -> {after_model}")
@@ -458,7 +458,7 @@ if __name__ == "__main__":
 
 
 # Combine all results
-csv_files = glob.glob(f"comparison_results/*.csv")
+csv_files = glob.glob(f"results/comparison_results_per_model/*.csv")
 df_list = [pd.read_csv(file) for file in csv_files]
 merged_df = pd.concat(df_list, ignore_index=True)
-merged_df.to_csv(f"comparison_results_all.csv", index=False)
+merged_df.to_csv(f"results/comparison_results_all.csv", index=False)

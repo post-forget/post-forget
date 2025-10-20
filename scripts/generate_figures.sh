@@ -2,15 +2,15 @@
 
 python3 ./src/analyze/process_data.py
 
-CSV_OUTPUT_BASE_DIR="processed_csv"
-LATEX_OUTPUT_BASE_DIR="latex_output"
-PLOT_OUTPUT_BASE_DIR="plots"
+CSV_OUTPUT_BASE_DIR="results/processed_csv"
+LATEX_OUTPUT_BASE_DIR="results/latex_output"
+PLOT_OUTPUT_BASE_DIR="results/plots"
 
 mkdir -p "$CSV_OUTPUT_BASE_DIR"
 mkdir -p "$LATEX_OUTPUT_BASE_DIR"
 mkdir -p "$PLOT_OUTPUT_BASE_DIR"
 
-input_file="comparison_results_all.csv"
+input_file="results/comparison_results_all.csv"
 base_name=$(basename "$input_file" .csv)
 echo "--- Processing file: $base_name ---"
 
