@@ -117,8 +117,6 @@ def run(results_directory,
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--venv_dir", type=str, required=True)
-    parser.add_argument("--code_dir", type=str, required=True)
     parser.add_argument("--results_directory", type=str, required=True)
     parser.add_argument("--custom_tasks_directory", type=str, default="main_experiments/src/custom_tasks_extractor.py", help="Python file containing the lighteval tasks to evaluate")
     parser.add_argument("--tasks_directory", type=str, required=True, help="Directory containing txt files with the tasks to evaluate")
