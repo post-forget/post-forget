@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-source /home/bethge/bkr007/.bashrc
-
 CODE_DIR=""
 VENV_DIR=""
 RESULT_DIR=post-forget/results
