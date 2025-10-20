@@ -1,6 +1,6 @@
 #!/bin/bash
 
-python3 ./src/analyze/process_data.py
+source ../.venv/bin/activate
 
 CSV_OUTPUT_BASE_DIR="results/processed_csv"
 LATEX_OUTPUT_BASE_DIR="results/latex_output"

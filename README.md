@@ -58,5 +58,12 @@ Before running with `merge_base` or `merge_tuned`, be sure to generate the merge
 To generate plots and visualizations from the experimental results:
 
 ```bash
-./scripts/generate_figures.sh
+./scripts/generate_local_figures.sh
+```
+
+If you wish you to generate figures from the pre-computed sample-level results without needing to
+re-run experiments, then instead run:
+
+```bash
+./scripts/generate_precomputed_figures.sh
 ```
