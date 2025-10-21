@@ -4,7 +4,7 @@ This repository contains code and resources for analyzing post-training forgetti
 
 ## Resources
 
-- **Paper**: [Read the full paper here](https://github.com/post-forget/post-forget/blob/main/paper/paper.pdf)
+- **Paper**: [Read the full paper here](https://arxiv.org/abs/2510.17776)
 - **Website**: [https://post-forget.github.io/](https://post-forget.github.io/)
 - **Dataset**: [HuggingFace Dataset](https://huggingface.co/datasets/post-forget/post-forget)
 
