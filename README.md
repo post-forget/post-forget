@@ -67,3 +67,18 @@ re-run experiments, then instead run:
 ```bash
 ./scripts/generate_precomputed_figures.sh
 ```
+
+## Citation
+
+To cite our work:
+```bibtex
+@misc{harmon2025postforgetting,
+      title={Mapping Post-Training Forgetting in Language Models at Scale}, 
+      author={Jackson Harmon and Andreas Hochlehnert and Matthias Bethge and Ameya Prabhu},
+      year={2025},
+      eprint={2510.17776},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2510.17776}, 
+}
+```
